@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectores 3</title>
+    <style>
+        p {
+            color: salmon;
+        }
+        /*seudoclases*/
+        p:hover {
+            color: skyblue;
+        }
+        div p:nth-child(1) {
+            color: green;
+        }
+        /* seudo elementos*/
+        
+        p::before {
+            content:"🤩";
+        }
+        p::after {
+            content: "🥱";
+        }
+
+        ::placeholder {
+            color: tomato;
+        }
+
+        p::first-letter{
+            color: teal;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Josue</p>
+        <p>maya</p>
+        <p>valencia</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
